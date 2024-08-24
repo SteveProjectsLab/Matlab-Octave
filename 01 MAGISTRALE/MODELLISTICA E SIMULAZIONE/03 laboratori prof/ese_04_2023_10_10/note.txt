@@ -1,0 +1,2 @@
+risolti i punti di equilibrio della settimana scorsa
+(era SIR, non lineare)

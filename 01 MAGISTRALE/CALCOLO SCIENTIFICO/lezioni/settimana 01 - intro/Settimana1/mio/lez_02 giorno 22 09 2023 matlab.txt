@@ -1,0 +1,32 @@
+implementazione prodotto tra matrici
+
+usa le dimensioni corrette 
+
+con il . esegui l'operazione dopo il punto elemento per elemento
+
+2\3 il 2 alla meno uno per 3
+
+c=2/3 divisione
+c=2\3 =1,5
+
+size
+
+det
+
+rango= massimo numero di linee o colonne linearmente indipendenti
+
+eig = autovalori matrice
+
+disegnare funzioni
+
+usa "help"
+
+usa "lookfor"
+
+posso spostare la legenda
+
+l= legend ('f(x )=(2x- sqrt (2))^2 sin (2x)','g(x)=e^x cos(x)');
+set (l,'Location ','Northwest ')
+
+clf pulisci funzione precedente
+

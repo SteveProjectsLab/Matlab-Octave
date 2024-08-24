@@ -1,0 +1,69 @@
+TE 08 09 2022
+
+############################################################################################################################
+Es.1
+
+Modello:
+	dX1/dt=X1 - p1 - X1^2/K - X1*X2*a1
+	dX2/dt=X1*X2*a2 - X2*tau
+
+Variabili di stato:
+	X1: numero di crostacei
+	X2: numero di squali
+Ingressi:
+	p1: pesca dei crostacei
+Uscite:
+	y1: numero di crostacei (coincide con X1)
+	y2: numero di squali (coincide con X2)
+Input manipolabili:
+	p1: variando il suo valore si modifica direttamente la dinamica dei crostacei
+	a1 e a2: variando i coefficienti di incontro tra le due specie è possibile
+	modificare la dinamica di entrambe le specie (ad esempio limitando il numero di crostacei
+	e di squali che possono essere nella stessa zona del laghetto si riducono a1 e a2)
+Input non manipolabili:
+	tau: il parametro è una caratteristica della specie degli squali
+
+############################################################################################################################
+Es.2
+
+Punti di equilibrio:
+	xeq1: [0.000000 ; 0.000000]	 autovalori: [-4.000000 ; 0.000000]	 caso di indecidibilità
+	xeq2: [-1.000000 ; -0.250000]	 autovalori: [-4.000000 ; 0.250000]	 instabile
+Controllo linearizzante:
+	u_lin: ((5*X1 + 5*X1^2)*(X1 - 4*X2) - v + 5*X2^2*(2*X1 + 1)*(X1 + X1^2))/((5*X1 + 5*X1^2)*(X2 - 3))
+Legge di controllo:
+	tempo di regime: 2	 autovalori: [-2.500000 ; -5.000000]
+	costanti k: [12.500000 7.500000]
+	diffeomorfismo: [5*X1 ; 5*X2*(X1 + X1^2)]
+
+############################################################################################################################
+Es.3
+
+Modello migliore:
+                                                                                                                                                                                                                                                                                                                                           
+Discrete-time ARX model: A(z)y(t) = B(z)u(t) + e(t)                                                                                                                                                                                                                                                                                        
+  A(z) = 1 - 1.628 (+/- 0.03884) z^-1 + 0.629 (+/- 0.03874) z^-2                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                           
+  B1(z) = 0                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                           
+  B2(z) = 2.535e-05 (+/- 4.415e-06)                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                           
+Sample time: 1 seconds                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                                           
+Parameterization:                                                                                                                                                                                                                                                                                                                          
+   Polynomial orders:   na=2   nb=[0 1]   nk=[1 0]                                                                                                                                                                                                                                                                                         
+   Number of free coefficients: 3                                                                                                                                                                                                                                                                                                          
+   Use "polydata", "getpvec", "getcov" for parameters and their uncertainties.                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                                                           
+Status:                                                                                                                                                                                                                                                                                                                                    
+Estimated using ARX on time domain data "dati_id".                                                                                                                                                                                                                                                                                         
+Fit to estimation data: 99.25% (prediction focus)                                                                                                                                                                                                                                                                                          
+FPE: 0.0001023, MSE: 9.977e-05                                                                                                                                                                                                                                                                                                             
+More information in model's "Report" property.                                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                                                           Model Properties
+MAE: 3.372391	 Correlazione: 0.999988
+
+Intervalli di confidenza richiesti dei parametri stimati:
+	Moltiplicatore z^-1 parte AR: [-1.705680,-1.550320]
+	Moltiplicatore z^-2 parte AR: [0.551520,0.706480]
+	Moltiplicatore z^0 ingresso 2: [1.652000e-05,3.418000e-05]

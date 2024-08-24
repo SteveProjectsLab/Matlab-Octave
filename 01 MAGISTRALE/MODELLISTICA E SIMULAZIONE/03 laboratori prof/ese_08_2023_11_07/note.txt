@@ -1,0 +1,4 @@
+continuazione ESE5
+viene terminata la parte di IO linearization
+
+progettare controllo v

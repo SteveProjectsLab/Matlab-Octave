@@ -1,0 +1,9 @@
+subplot
+
+NB non è una funzione l'elica, è una superficie
+
+può essere definita parametricamente
+
+movie
+
+variabili globali

@@ -1,0 +1,4 @@
+Esercizio (calcolo pi)
+
+metodo di bisezione
+

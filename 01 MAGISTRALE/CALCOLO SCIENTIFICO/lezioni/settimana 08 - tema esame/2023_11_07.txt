@@ -1,0 +1,12 @@
+BI-CGStab
+
+risoluzione tema esame
+
+https://paola-gervasio.unibs.it/CS/temi.html
+  
+
+    NB puoi rispondere direttamente sullo script alle domande aperte
+
+NB propagazione errori condizionamento 
+dipende dal condizionamento della matrice
+potrei fare più iterazioni del gradiente coniugato

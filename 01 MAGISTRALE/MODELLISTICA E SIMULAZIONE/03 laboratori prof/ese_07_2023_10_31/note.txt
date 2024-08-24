@@ -1,0 +1,4 @@
+continuo alghe e pesci
+
+nmetto a confronto quello ella volta scorsa con il sistema linearizzato
+devo ragionare con delta x delta u

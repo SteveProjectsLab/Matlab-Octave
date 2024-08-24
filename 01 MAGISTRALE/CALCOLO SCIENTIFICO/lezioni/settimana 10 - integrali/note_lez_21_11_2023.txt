@@ -1,0 +1,2 @@
+problema 6
+errori interpolazione lineare composito
