@@ -1,4 +1,0 @@
-modifichiamo lo script radici multiple
-
-per ogni ordine di grandezza ci sono 5 o 6 errori
-

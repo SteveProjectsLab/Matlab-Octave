@@ -1,2 +1,0 @@
-trovare i bordi dell'immagine
-uint 8 sono gli interi a 8 bit

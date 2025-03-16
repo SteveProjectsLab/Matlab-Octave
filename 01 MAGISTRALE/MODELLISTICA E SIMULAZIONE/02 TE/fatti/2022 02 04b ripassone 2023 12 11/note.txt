@@ -1,5 +1,0 @@
-12.30 
-
-se u=0 il fatto che dice che sia linearizzazione perfetta è inutile
-
-perchè le proprietà non dipendono dall'ingresso

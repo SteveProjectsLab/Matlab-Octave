@@ -1,5 +1,0 @@
-max_ord_ar=18/Tc;
-nel caso non sia intero approssimalo con round
-
-non avendo necessità di controllare l'ingresso, simao in previsione, 
-possimao accettare anche una utoregressivo puro

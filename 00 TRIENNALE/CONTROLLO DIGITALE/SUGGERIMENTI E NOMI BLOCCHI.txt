@@ -1,9 +1,0 @@
-click destro per derivare una linea
-
-nomi blocchi:
-	transfer function
-	scope
-	step
-	add
-    discrete transfer function
-    pulse
